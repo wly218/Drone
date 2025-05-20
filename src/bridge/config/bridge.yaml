@@ -1,0 +1,11 @@
+- ros_topic_name: "scan"
+  gz_topic_name: "/scan"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS  # 桥接激光雷达数据
+
+- ros_topic_name: "distance_sensor"
+  gz_topic_name: "/distance_sensor"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS # 桥接激光测距模块数据

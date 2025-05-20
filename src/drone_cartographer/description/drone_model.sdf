@@ -1,0 +1,690 @@
+<?xml version="1.0" ?>
+<sdf version='1.9'>
+  <model name='x500_lidar_2d'>
+    <self_collide>false</self_collide>
+    <frame name='_merged__x500__model__' attached_to='base_link'>
+      <pose relative_to='__model__'>0 0 0 0 0 0</pose>
+    </frame>
+    <frame name='_merged__x500_base__model__' attached_to='base_link'>
+      <pose relative_to='_merged__x500__model__'>0 0 0.23999999999999999 0 0 0</pose>
+    </frame>
+    <link name='base_link'>
+      <inertial>
+        <mass>2</mass>
+        <inertia>
+          <ixx>0.021666666666666671</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.021666666666666671</iyy>
+          <iyz>0</iyz>
+          <izz>0.040000000000000008</izz>
+        </inertia>
+      </inertial>
+      <gravity>true</gravity>
+      <velocity_decay/>
+      <visual name='base_link_visual'>
+        <pose>0 0 0.025000000000000001 0 0 -3.1415926531795866</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://x500_base/meshes/NXP-HGD-CF.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='5010_motor_base_0'>
+        <pose>0.17399999999999999 0.17399999999999999 0.032000000000000001 0 0 -0.45000000000000001</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://x500_base/meshes/5010Base.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='5010_motor_base_1'>
+        <pose>-0.17399999999999999 0.17399999999999999 0.032000000000000001 0 0 -0.45000000000000001</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://x500_base/meshes/5010Base.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='5010_motor_base_2'>
+        <pose>0.17399999999999999 -0.17399999999999999 0.032000000000000001 0 0 -0.45000000000000001</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://x500_base/meshes/5010Base.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='5010_motor_base_3'>
+        <pose>-0.17399999999999999 -0.17399999999999999 0.032000000000000001 0 0 -0.45000000000000001</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://x500_base/meshes/5010Base.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      
+      <collision name='base_link_collision_0'>
+        <pose>0 0 0.0070000000000000001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.35355339059327373 0.35355339059327373 0.050000000000000003</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_collision_1'>
+        <pose>0 -0.098000000000000004 -0.123 -0.34999999999999998 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.014999999999999999 0.014999999999999999 0.20999999999999999</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_collision_2'>
+        <pose>0 0.098000000000000004 -0.123 0.34999999999999998 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.014999999999999999 0.014999999999999999 0.20999999999999999</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_collision_3'>
+        <pose>0 -0.13200000000000001 -0.2195 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.25 0.014999999999999999 0.014999999999999999</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_collision_4'>
+        <pose>0 0.13200000000000001 -0.2195 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.25 0.014999999999999999 0.014999999999999999</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      
+      <pose relative_to='_merged__x500_base__model__'>0 0 0 0 0 0</pose>
+    </link>
+    <link name='rotor_0'>
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <velocity_decay/>
+      <pose relative_to='_merged__x500_base__model__'>0.17399999999999999 -0.17399999999999999 0.059999999999999998 0 0 0</pose>
+      <inertial>
+        <mass>0.016076923076923075</mass>
+        <inertia>
+          <ixx>3.8464910483993325e-07</ixx>
+          <iyy>2.6115851691700804e-05</iyy>
+          <izz>2.6498582347140039e-05</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <visual name='rotor_0_visual'>
+        <pose>-0.021999999999999999 -0.14638461538461536 -0.016 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.84615384615384615 0.84615384615384615 0.84615384615384615</scale>
+            <uri>model://x500_base/meshes/1345_prop_ccw.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='rotor_0_visual_motor_bell'>
+        <pose>0 0 -0.032000000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://x500_base/meshes/5010Bell.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='rotor_0_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.27923076923076923 0.016923076923076923 0.0008461538461538462</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+    <joint name='rotor_0_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor_0</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rotor_1'>
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <velocity_decay/>
+      <pose relative_to='_merged__x500_base__model__'>-0.17399999999999999 0.17399999999999999 0.059999999999999998 0 0 0</pose>
+      <inertial>
+        <mass>0.016076923076923075</mass>
+        <inertia>
+          <ixx>3.8464910483993325e-07</ixx>
+          <iyy>2.6115851691700804e-05</iyy>
+          <izz>2.6498582347140039e-05</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <visual name='rotor_1_visual'>
+        <pose>-0.021999999999999999 -0.14638461538461536 -0.016 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.84615384615384615 0.84615384615384615 0.84615384615384615</scale>
+            <uri>model://x500_base/meshes/1345_prop_ccw.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='rotor_1_visual_motor_top'>
+        <pose>0 0 -0.032000000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://x500_base/meshes/5010Bell.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='rotor_1_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.27923076923076923 0.016923076923076923 0.0008461538461538462</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+    <joint name='rotor_1_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor_1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rotor_2'>
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <velocity_decay/>
+      <pose relative_to='_merged__x500_base__model__'>0.17399999999999999 0.17399999999999999 0.059999999999999998 0 0 0</pose>
+      <inertial>
+        <mass>0.016076923076923075</mass>
+        <inertia>
+          <ixx>3.8464910483993325e-07</ixx>
+          <iyy>2.6115851691700804e-05</iyy>
+          <izz>2.6498582347140039e-05</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <visual name='rotor_2_visual'>
+        <pose>-0.021999999999999999 -0.14638461538461536 -0.016 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.84615384615384615 0.84615384615384615 0.84615384615384615</scale>
+            <uri>model://x500_base/meshes/1345_prop_cw.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='rotor_2_visual_motor_top'>
+        <pose>0 0 -0.032000000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://x500_base/meshes/5010Bell.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='rotor_2_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.27923076923076923 0.016923076923076923 0.0008461538461538462</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+    <joint name='rotor_2_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor_2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rotor_3'>
+      <gravity>true</gravity>
+      <self_collide>false</self_collide>
+      <velocity_decay/>
+      <pose relative_to='_merged__x500_base__model__'>-0.17399999999999999 -0.17399999999999999 0.059999999999999998 0 0 0</pose>
+      <inertial>
+        <mass>0.016076923076923075</mass>
+        <inertia>
+          <ixx>3.8464910483993325e-07</ixx>
+          <iyy>2.6115851691700804e-05</iyy>
+          <izz>2.6498582347140039e-05</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <visual name='rotor_3_visual'>
+        <pose>-0.021999999999999999 -0.14638461538461536 -0.016 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.84615384615384615 0.84615384615384615 0.84615384615384615</scale>
+            <uri>model://x500_base/meshes/1345_prop_cw.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/DarkGrey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='rotor_3_visual_motor_top'>
+        <pose>0 0 -0.032000000000000001 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://x500_base/meshes/5010Bell.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='rotor_3_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.27923076923076923 0.016923076923076923 0.0008461538461538462</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+    <joint name='rotor_3_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>rotor_3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-10000000000000000</lower>
+          <upper>10000000000000000</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <plugin name='gz::sim::systems::MulticopterMotorModel' filename='gz-sim-multicopter-motor-model-system'>
+      <jointName>rotor_0_joint</jointName>
+      <linkName>rotor_0</linkName>
+      <turningDirection>ccw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>1000.0</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.016</momentConstant>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
+      <motorNumber>0</motorNumber>
+      <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+      <motorType>velocity</motorType>
+    </plugin>
+    <plugin name='gz::sim::systems::MulticopterMotorModel' filename='gz-sim-multicopter-motor-model-system'>
+      <jointName>rotor_1_joint</jointName>
+      <linkName>rotor_1</linkName>
+      <turningDirection>ccw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>1000.0</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.016</momentConstant>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
+      <motorNumber>1</motorNumber>
+      <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+      <motorType>velocity</motorType>
+    </plugin>
+    <plugin name='gz::sim::systems::MulticopterMotorModel' filename='gz-sim-multicopter-motor-model-system'>
+      <jointName>rotor_2_joint</jointName>
+      <linkName>rotor_2</linkName>
+      <turningDirection>cw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>1000.0</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.016</momentConstant>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
+      <motorNumber>2</motorNumber>
+      <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+      <motorType>velocity</motorType>
+    </plugin>
+    <plugin name='gz::sim::systems::MulticopterMotorModel' filename='gz-sim-multicopter-motor-model-system'>
+      <jointName>rotor_3_joint</jointName>
+      <linkName>rotor_3</linkName>
+      <turningDirection>cw</turningDirection>
+      <timeConstantUp>0.0125</timeConstantUp>
+      <timeConstantDown>0.025</timeConstantDown>
+      <maxRotVelocity>1000.0</maxRotVelocity>
+      <motorConstant>8.54858e-06</motorConstant>
+      <momentConstant>0.016</momentConstant>
+      <commandSubTopic>command/motor_speed</commandSubTopic>
+      <motorNumber>3</motorNumber>
+      <rotorDragCoefficient>8.06428e-05</rotorDragCoefficient>
+      <rollingMomentCoefficient>1e-06</rollingMomentCoefficient>
+      <rotorVelocitySlowdownSim>10</rotorVelocitySlowdownSim>
+      <motorType>velocity</motorType>
+    </plugin>
+    <frame name='_merged__lidar_2d_v2__model__' attached_to='link'>
+      <pose relative_to='__model__'>0.12 0 0.26000000000000001 0 0 0</pose>
+    </frame>
+    <link name='link'>
+      <pose relative_to='_merged__lidar_2d_v2__model__'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.043499999999999997 0 0 0</pose>
+        <mass>0.37</mass>
+        <inertia>
+          <ixx>0.00034437749999999994</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00034437749999999994</iyy>
+          <iyz>0</iyz>
+          <izz>0.00022199999999999998</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision_base'>
+        <pose>0 0 0.020500000000000001 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.059999999999999998 0.059999999999999998 0.041000000000000002</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='collision_mid'>
+        <pose>0 0 0.055 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.025000000000000001</radius>
+            <length>0.028000000000000001</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='collision_top'>
+        <pose>0 0 0.078 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.056000000000000001 0.056000000000000001 0.017999999999999999</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <uri>model://lidar_2d_v2/meshes/lidar_2d_v2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      
+    </link>
+    <joint name='LidarJoint' type='fixed'>
+      <parent>base_link</parent>
+      <child>link</child>
+      <pose relative_to='base_link'>-0.10000000000000001 0 0.26000000000000001 0 0 0</pose>
+    </joint>
+    <frame name='_merged__OakD-Lite__model__' attached_to='camera_link'>
+      <pose relative_to='__model__'>0.12 0.029999999999999999 0.20000000000000001 0 1.5707963009853283 0</pose>
+    </frame>
+    <link name='camera_link'>
+      <inertial>
+        <pose>0.0035799999999999998 -0.029999999999999999 0.014 0 0 0</pose>
+        <mass>0.060999999999999999</mass>
+        <inertia>
+          <ixx>4.60804e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>5.5420999999999998e-06</iyy>
+          <iyz>0</iyz>
+          <izz>4.3651900000000001e-05</izz>
+        </inertia>
+      </inertial>
+      <visual name='OakD-Lite/visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://OakD-Lite/meshes/OakDLite.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name='OakD-Lite/collision'>
+        <pose>0.0035799999999999998 -0.029999999999999999 0.014 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.017500000000000002 0.090999999999999998 0.028000000000000001</size>
+          </box>
+        </geometry>
+      </collision>
+      
+      <gravity>true</gravity>
+      <velocity_decay/>
+      <pose relative_to='_merged__OakD-Lite__model__'>0 0 0 0 0 0</pose>
+    </link>
+    <joint name='CameraJoint' type='fixed'>
+      <parent>base_link</parent>
+      <child>camera_link</child>
+      <pose relative_to='base_link'>0.12 0.029999999999999999 0.20000000000000001 0 1.5707963009853283 0</pose>
+    </joint>
+    <frame name='_merged__LW20__model__' attached_to='lw20_link'>
+      <pose relative_to='base_link'>0 0 -0.079000000000000001 0 1.5700000000004057 0</pose>
+    </frame>
+    <link name='lw20_link'>
+      <pose relative_to='_merged__LW20__model__'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.02</mass>
+        <inertia>
+          <ixx>3.9999999999999998e-06</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>3.9999999999999998e-06</iyy>
+          <iyz>0</iyz>
+          <izz>1.9999999999999999e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision_base'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.029999999999999999 0.02 0.042999999999999997</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <uri>model://LW20/meshes/LW20.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='lidar_model_joint' type='fixed'>
+      <parent>base_link</parent>
+      <child>lw20_link</child>
+      <pose relative_to='base_link'>0 0 0 0 0 0</pose>
+    </joint>
+    <joint name='lidar_sensor_joint' type='fixed'>
+      <parent>base_link</parent>
+      <child>lidar_sensor_link</child>
+    </joint>
+    <link name='lidar_sensor_link'>
+      <pose relative_to='base_link'>0 0 -0.050000000000000003 0 1.5700000000001271 0</pose>
+      <inertial>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>1.0000000000000001e-05</ixx>
+          <iyy>1.0000000000000001e-05</iyy>
+          <izz>1.0000000000000001e-05</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+      
+    </link>
+  </model>
+</sdf>
