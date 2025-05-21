@@ -15,6 +15,7 @@ find_package(rosidl_default_generators REQUIRED)
 #为接口文件生成源码
 rosidl_generate_interfaces( ${PROJECT_NAME}
     "msg/Waypoints.msg"
+    "msg/Distance.msg"
 )
 
 if(BUILD_TESTING)
