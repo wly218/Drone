@@ -254,6 +254,9 @@ void State_Machine::handleDrop()
 void State_Machine::handlePassingCircle()
 {}
 
+/**
+* @brief Decide which landing point to land from based on the QR code information
+*/
 void State_Machine::handleRtl()
 {
 	RCLCPP_INFO(this->get_logger(),"Ready to rtl!");
